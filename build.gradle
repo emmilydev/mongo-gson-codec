@@ -1,0 +1,21 @@
+plugins {
+  id 'java'
+}
+
+group 'me.ialext'
+version '0.0.1-SNAPSHOT'
+
+repositories {
+  mavenCentral()
+}
+
+dependencies {
+  testImplementation 'org.junit.jupiter:junit-jupiter-api:5.6.0'
+  testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine'
+  implementation 'org.mongodb:mongodb-driver-sync:4.2.2'
+  implementation 'com.google.code.gson:gson:2.8.6'
+}
+
+test {
+  useJUnitPlatform()
+}
